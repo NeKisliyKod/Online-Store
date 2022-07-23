@@ -53,8 +53,8 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, 'src/assets'),
-          to: path.resolve(__dirname, 'dist/assets'),
+          from: path.resolve(__dirname, 'src/img'),
+          to: path.resolve(__dirname, 'dist/images'),
         }
       ]
     })
@@ -118,5 +118,9 @@ module.exports = {
         // }],
       },
     ],
+  },
+
+  resolve: {
+    extensions: ['.js', '.ts']
   },
 };

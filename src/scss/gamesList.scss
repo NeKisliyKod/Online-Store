@@ -1,0 +1,53 @@
+.gamesList{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .gamesList__game{
+    margin: 12px 8px 20px;
+  }
+}
+
+.game{
+  padding: 8px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 8px #fff;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 8px rgb(163, 163, 163);
+  }
+  .game__imgContainer{
+    margin: 0 auto 15px auto;
+    .game__img{
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+    }
+  }
+
+  .game__description{
+    .game__name{
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .game__descr{
+      padding: 3px;
+      color: rgb(80, 79, 79);
+      font-size: 15px;
+      .game__descrSign{
+        font-weight: bold;
+      }
+    }
+    .game__producer{
+      text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+  }
+}

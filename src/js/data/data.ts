@@ -9,7 +9,7 @@ export interface IData {
   path:string;
 }
 
-export const data: Array<IData>  = [
+export const mainData: Array<IData>  = [
   {
     name: 'Выше и нижу',
     price: 132,

@@ -16,10 +16,38 @@
 
   <main class="main app__main">
     <section class="filter main__filter">
-      <label for="priceFilter">
-        Цена от:
-        <input type="number" id="priceFilter" name="priceFilter" min="0">
-      </label>
+      <div class="filter__byPrice">
+        <p class="filter__heading">
+          Цена :
+        </p>
+        <div>
+          <input 
+            class="input" 
+            type="number" 
+            id="priceFilter__min" 
+            name="priceFilter" 
+            min="0" 
+            placeholder="от"
+          >
+        </div>
+      </div>
+
+      <div class="filter__byProducer">
+        <p class="filter__heading">
+          Производитель :
+        </p>
+
+        <select class="filter__select" name="prod" id="prodSelect">
+          <option value="Все">Все</option>
+          <option value="Lavka Games">Lavka Games</option>
+          <option value="Hobby World">Hobby World</option>
+          <option value="Стиль Жизни">Стиль Жизни</option>
+          <option value="Zvezda">Zvezda</option>
+          <option value="Crowd Games">Crowd Games</option>
+          <option value="GaGa Games">GaGa Games</option>
+          <option value="Геменот">Геменот</option>
+        </select>
+      </div>
     </section>
 
     <ul class="gamesList">

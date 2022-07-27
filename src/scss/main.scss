@@ -75,5 +75,16 @@ button{
   height: auto;
 }
 
+.input{
+  height: 30px;
+  width: 100px;
+  padding-left: 5px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  &::placeholder{
+    font-size: 15px;
+  }
+}
+
 @import './filter.scss';
 @import './gamesList.scss'
